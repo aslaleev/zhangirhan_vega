@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <div class="toolbar">
+        <div class="toolbar_inner">
+        <a  href="index.html"><img src="photos/menu.png" width="40" ></a>
+        </div>
+    </div>
+    <meta charset ="UTF-8">
+    <title>Корзина</title>
+    <style>
+        body {
+            background: #78B545; /* Цвет фона */
+            color: #eeeeee; /* Цвет текста */
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <br> <br>
+    <h1 align="center"> Корзина товаров </h1>
+    <table bgcolor="#78B545" class="table table-bordered table-striped" id="mini-cart" align=center border="1"></table>
+    <h2 align="center">Данные клиента</h2>
+    <div align="center" class="inp">
+        <!-- <p align="center">Адрес доставки:</p> -->
+        <input size="25" v-model="message" placeholder="Имя клиента">
+        <!-- <p align="center">Мобильный номер:</p> -->
+        <input size="25" v-model="message" placeholder="Номер моб. телефона">
+        <input size="25" v-model="message" placeholder="Адрес доставки">
+    </div>
+    <a href="#" class="a-btn-3">
+        <span class="a-btn-3-text">Заказать</span>
+        <span class="a-btn-3-slide-text"> ВЕГА </span>
+        <span class="a-btn-3-icon-right"><span></span></span>
+    </a>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/cart.js"></script>
+</body>

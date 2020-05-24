@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <div  class="toolbar">
+        <div class="toolbar_inner">
+        <a  href="cart.html"><img src="photos/basket.png" width="40" ></a>
+        </div>
+    </div>
+     
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="utf-8">
+    <title>Доставка на дом</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <div>
+        <table border="1" align="center" rules="rows" width="100%" height="100%">
+            <p><img src="photos/shop.jpeg" width="1350" height="350"></p>
+            <tr>
+                <td>
+                    <table
+                    border="1"
+                    bgcolor="#78B545"
+                    cellpadding="10"
+                    width="100%"
+                    style="width:100%; border-radius:5px;">
+                    <!--Создаём строку-->
+                        <tr>
+                            <td width="100" bgcolor="#78B545">
+                            <h3>Каталог товаров:</h3>
+                            <!--Абзац для ссылки на страницу сайта-->
+                            <div class="side" id="app">
+                                <ul class="menu">
+                                    <li class="menu__list" ><a href="#">Овощи, фрукты, ягоды</a>
+                                        <ul class="menu__drop">
+                                            <li><a href="#"><option v-on:click="ChangeCategory($event)" :value="1">Фрукты</option></a></li>
+                                            <li><a href="#"><option v-on:click="ChangeCategory($event)" :value="2">Овощи</option></a></li>
+                                            <li><a href="#">Грибы</a></li>
+                                            <li><a href="#">Ягоды</a></li>
+                                            <li><a href="#">Орехи и сухофрукты</a></li>
+                                            <li><a href="#">Зелень и салаты</a></li>
+                                            <li><a href="#">Соленья</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu__list"><a href="#">Рыба, икра</a>
+                                        <ul class="menu__drop">
+                                            <li><a href="#">Икра</a></li>
+                                            <li><a href="#">Охлажденная рыба</a></li>
+                                            <li><a href="#">Морепродукты</a></li>
+                                            <li><a href="#">Сельдь</a></li>
+                                            <li><a href="#">Рыбные консервы</a></li>
+                                            <li><a href="#">Рыбные полуфабрикаты</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu__list"><a href="#">Птица, мясо, деликатесы</a>
+                                        <ul class="menu__drop">
+                                            <li><a href="#">Мясо птицы</a></li>
+                                            <li><a href="#">Фарш</a></li>
+                                            <li><a href="#">Говядина</a></li>
+                                            <li><a href="#">Свинина</a></li>
+                                            <li><a href="#">Баранина</a></li>
+                                            <li><a href="#">Телятина</a></li>
+                                            <li><a href="#">Колбасы, ветчина</a></li>
+                                            <li><a href="#">Сосиски, сардельки</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu__list"><a href="#">Молоко, сыр, яйца</a>
+                                        <ul class="menu__drop">
+                                            <li><a href="#">Молоко</a></li>
+                                            <li><a href="#">Яйцо</a></li>
+                                            <li><a href="#">Творог,сырки</a></li>
+                                            <li><a href="#">Масло,маргарин</a></li>
+                                            <li><a href="#">Кефир</a></li>
+                                            <li><a href="#">Кисломолочные продукты</a></li>
+                                            <li><a href="#">Сметана</a></li>
+                                            <li><a href="#">Сливки</a></li>
+                                            <li><a href="#">Йогурты, творожки, десерты</a></li>
+                                            <li><a href="#">Детские молочные продукты</a></li>
+                                            <li><a href="#">Мороженое</a></li>
+                                            <li><a href="#">Молоко сгущенное</a></li>
+                                            <li><a href="#">Майонез</a></li>
+                                            <li><a href="#">Сыры</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu__list"><a href="#">Воды, соки, напитки</a>
+                                        <ul class="menu__drop">
+                                            <li><a href="#">Вода</a></li>
+                                            <li><a href="#">Соки, нектары</a></li>
+                                            <li><a href="#">Квас</a></li>
+                                            <li><a href="#">Газированные напитки</a></li>
+                                            <li><a href="#">Энергетические напитки</a></li>
+                                            <li><a href="#">Морсы, кисели компоты</a></li>
+                                            <li><a href="#">Холодный чай</a></li>
+                                            <li><a href="#">Безалкогольное пиво</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu__list"><a href="#">Чай, кофе, сахар</a>
+                                        <ul class="menu__drop">
+                                            <li><a href="#">Чай</a></li>
+                                            <li><a href="#">Кофе</a></li>
+                                            <li><a href="#">Какао, шоколад</a></li>
+                                            <li><a href="#">Сахар</a></li>
+                                            <li><a href="#">Подсладстители и заменители сахара</a></li>
+                                            <li><a href="#">Цикорий</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu__list"><a href="#">Соусы, орехи, консервы</a>
+                                        <ul class="menu__drop">
+                                            <li><a href="#">Соусы</a></li>
+                                            <li><a href="#">Орехи</a></li>
+                                            <li><a href="#">Семечки, сухофрукты</a></li>
+                                            <li><a href="#">Варенье, джемы, сиропы</a></li>
+                                            <li><a href="#">Майонез</a></li>
+                                            <li><a href="#">Рыбные консервы</a></li>
+                                            <li><a href="#">Мясные консервы</a></li>
+                                            <li><a href="#">Горчица, хрен</a></li>
+                                            <li><a href="#">Томатные пасты, кетчуп</a></li>
+                                            <li><a href="#">Овощные консервы</a></li>
+                                            <li><a href="#">Мёд</a></li>
+                                            <li><a href="#">Сгущенка, молочные консервы</a></li>
+                                            <li><a href="#">Фруктовые и ягодные консервы</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu__list"><a href="#">Хлеб, сладости, снеки</a>
+                                        <ul class="menu__drop">
+                                            <li><a href="#">Хлеб, лаваш, лепешки</a></li>
+                                            <li><a href="#">Пироги, кексы, рулеты</a></li>
+                                            <li><a href="#">Торты, пирожные</a></li>
+                                            <li><a href="#">Конфеты</a></li>
+                                            <li><a href="#">Шоколад, батончики</a></li>
+                                            <li><a href="#">Чипсы, снеки</a></li>
+                                            <li><a href="#">Печенье, пряники, вафли</a></li>
+                                            <li><a href="#">Сушки, сухари, хлебцы</a></li>
+                                            <li><a href="#">Зефир, мармелад, пастила</a></li>
+                                            <li><a href="#">Варенье, джемы, сиропы</a></li>
+                                            <li><a href="#">Мёд</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu__list"><a href="#">Макароны, крупы, специи</a>
+                                        <ul class="menu__drop">
+                                            <li><a href="#">Каши</a></li>
+                                            <li><a href="#">Мука</a></li>
+                                            <li><a href="#">Макароны, паста</a></li>
+                                            <li><a href="#">Крупыи бобовые</a></li>
+                                            <li><a href="#">Специи и приправы</a></li>
+                                            <li><a href="#">Компоненты для выпечки</a></li>
+                                            <li><a href="#">Уксус, соль</a></li>
+                                            <li><a href="#">Растительное масло</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu__list"><a href="#">Замороженные продукты</a>
+                                        <ul class="menu__drop">
+                                            <li><a href="#">Мороженое</a></li>
+                                            <li><a href="#">Овощи и смеси</a></li>
+                                            <li><a href="#">Ягоды и фрукты</a></li>
+                                            <li><a href="#">Пицца, вареники, пельмени, блины</a></li>
+                                            <li><a href="#">Котлеты, нагетсы, тесто</a></li>
+                                            <li><a href="#">Десерты</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu__list"><a href="#">Алкоголь</a>
+                                        <ul class="menu__drop">
+                                            <li><a href="#">Вино</a></li>
+                                            <li><a href="#">Вермуты</a></li>
+                                            <li><a href="#">Водка</a></li>
+                                            <li><a href="#">Виски, Бурбон</a></li>
+                                            <li><a href="#">Абсент</a></li>
+                                            <li><a href="#">Текила</a></li>
+                                            <li><a href="#">Джин</a></li>
+                                            <li><a href="#">Шампанское, игристые вина</a></li>
+                                            <li><a href="#">Коньяк, Бренди</a></li>
+                                            <li><a href="#">Слабоалкогольные напитки</a></li>
+                                            <li><a href="#">Пиво</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu__list"><a href="#">Гигиена, бытовая химия</a>
+                                        <ul class="menu__drop">
+                                            <li><a href="#">Продукт 1</a></li>
+                                            <li><a href="#">Продукт 2</a></li>
+                                            <li><a href="#">Продукт 3</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--Закрываем строку Меню-->
+                            </td>
+
+                            <td
+                            rowspan="2"
+                            cellpadding="1005">
+                            <div id = "foods"></div>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table border="1" bgcolor="#78B545" cellpadding="10" style="width:100%; border-radius:5px;">
+                        <tr>
+                            <th>
+                                <h3>Контактные данные:</h3>
+                                <h5>Адрес: улица Жангир хана 52</h5>
+                                <h5>Телефон: +7 (777) 223 6933</h5>
+<!--                                <div id="app">-->
+<!--                                     {{ info }}-->
+
+<!--                                </div>-->
+                            </th>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/vue_app.js"></script>
+</body>
+</html>

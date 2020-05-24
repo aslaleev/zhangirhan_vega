@@ -1,0 +1,21 @@
+Скрипт для создания данных по продуктам:
+
+Таблица products:
+	1. id
+	2. name
+	3. categoryid
+	4. categoryname
+	5. price
+	6. image
+
+
+
+Таблица order:
+	1. orderid
+	2. structure
+	3. createdate
+	4. deliverydate
+	5. status
+	6. adres
+	7. phone_numer
+	8. customer

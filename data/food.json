@@ -1,0 +1,42 @@
+{
+  "1": {
+    "name": "бананы",
+    "price": 300,
+    "image": "photos/bananas.jpg"
+  },
+  "2": {
+    "name": "яблоки гренни смит",
+    "price": 200,
+    "image": "photos/grapes.jpg"
+  },
+  "3": {
+    "name": "бананы",
+    "price": 300,
+    "image": "photos/bananas.jpg"
+  },
+  "4": {
+    "name": "бананы",
+    "price": 300,
+    "image": "photos/bananas.jpg"
+  },
+  "5": {
+    "name": "бананы",
+    "price": 300,
+    "image": "photos/bananas.jpg"
+  },
+  "6": {
+    "name": "бананы",
+    "price": 300,
+    "image": "photos/bananas.jpg"
+  },
+  "7": {
+    "name": "бананы",
+    "price": 300,
+    "image": "photos/bananas.jpg"
+  },
+  "8": {
+    "name": "бананы",
+    "price": 300,
+    "image": "photos/bananas.jpg"
+  }
+}

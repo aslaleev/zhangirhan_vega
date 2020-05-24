@@ -1,0 +1,13 @@
+id,name,categoryid,categoryname,price,image
+1,бананы,1,фрукты,300,photos\bananas.jpg
+2,яблоки гренни смит,1,фрукты,200,photos\apple_grenni_smit.jpg
+3,яблоки голден,1,фрукты,500,photos\apple_golden.jpg
+4,апельсины,1,фрукты,550,photos\orange.jpg
+5,виноград,1,фрукты,120,photos\grapes.jpg
+6,фарш говяжий,4,фарш,1500,photos\ground_beef.jpg
+7,фарш из птицы,4,фарш,2000,photos\ground_bird.jpg
+8,фарш халяль,4,фарш,150000,photos\ground_halal.jpg
+9,морковь,2,овощи,250,photos\carrot.jpg
+10,картошка,2,овощи,350,photos\potato.jpg
+11,капуста,2,овощи,100,photos\cabbage.jpg
+12,огурцы,2,овощи,450,photos\cucumber.jpg

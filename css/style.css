@@ -1,0 +1,263 @@
+.toolbar {
+    position: fixed;
+    text-align: center;
+    font-size: 150%;
+    color: #eeeeee;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+    border-bottom: 1px solid #FEA50D;
+    width: 100%;
+    background-image: url(photos/shop.jpeg);
+    background:#78B545;
+    height: 38px;
+}
+.btn btn-primary{
+    color:#78B545;
+}
+/*Иконка корзины*/
+.i {
+    background-image:url(https://laravel.ru/favicon.ico); 
+    width:16px; 
+    height:16px; 
+    align:left;
+    display:inline-block;
+    vertical-align:bottom;
+}
+    
+/* создаем стиль для кнопок */
+.single-foods {
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    margin: 10px;
+    float: left;
+    text-align: center;
+}
+
+.single-foods button{
+    display: block;
+    margin: 20px auto;
+}
+    
+
+body{
+    margin: 0;
+    padding: 0;
+    font: 1em/1.4em sans-serif;
+}
+
+a{text-decoration: none;}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*внешний вид меню*/
+
+.side{
+    width: 230px;
+    margin: 20px;
+}
+
+.menu a{
+    background: #fff;
+    color: #78B545;
+    padding: 10px;
+    display: block;
+    border-bottom: 1px solid #666;
+    transition: 0.5s all;
+    
+}
+
+.menu a:hover{
+    background: #666;
+    padding: 10px 0 10px 20px;
+}
+
+.menu li:first-child a,
+.menu li .menu__drop li:first-child a{
+    border-radius: 3px 3px 0 0;
+}
+
+.menu li:last-child a,
+.menu li .menu__drop li:last-child a{
+    border-radius: 0 0 3px 3px;
+    border-bottom: 0;
+    border-bottom: 1px solid #666;
+}
+
+.menu li .menu__drop li a{
+    border-radius: 0;
+}
+/*всплывающая меню*/
+
+.menu__list{
+    position: relative;
+}
+
+.menu__drop{
+    position: absolute;
+    width: 80%;
+    left: 100%;
+    top: -9999em;
+    border-left: 10px solid transparent;
+    opacity: 0;
+    transition: 0.5s opacity;
+}
+
+.menu__list:hover .menu__drop{
+    opacity: 1;
+    top: 0;
+}
+
+/*иконки для всплывающих менюшек*/
+
+.menu__list::after{
+    content: " ";
+    position: absolute;
+    border: 5px solid;
+    border-color: transparent transparent transparent #eee;
+    top:1em;
+    right: 0.7em;
+    transition: 0.5s;
+}
+
+.menu__list:hover::after{
+    transform: scaleX(-1);
+}
+
+h3{
+    font-family: sans-serif;
+    font-weight: 800;
+    font-style: oblique;
+    color: white;
+
+}
+
+
+/*код для кнопки заказать*/
+
+a.a-btn-3 {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Oswald',Arial,sans-serif;        
+}
+a.a-btn-3{
+background:#eeeeee;
+background:-webkit-gradient(linear,left top,left bottom,color-stop(#eeeeee,0),color-stop(#eeeeee,1));
+background:-webkit-linear-gradient(top, #eeeeee 0%, #eeeeee 100%);
+background:-moz-linear-gradient(top, #eeeeee 0%, #eeeeee 100%);
+background:-o-linear-gradient(top, #eeeeee 0%, #eeeeee 100%);
+background:linear-gradient(top, #eeeeee 0%, #eeeeee 100%);
+filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#80a9da', endColorstr='#6f97c5',GradientType=0 );
+padding-left:20px;
+padding-right:80px;
+height:38px;
+display:block;
+    margin: 20px auto;
+    text-align:center;
+    width:70px;
+position:relative;
+border:1px solid #5d81ab;
+-webkit-box-shadow:0px 1px 1px rgba(255,255,255,0.8) inset, 1px 1px 3px rgba(0,0,0,0.2), 0px 0px 0px 4px rgba(188,188,188,0.5);
+-moz-box-shadow:0px 1px 1px rgba(255,255,255,0.8) inset, 1px 1px 3px rgba(0,0,0,0.2), 0px 0px 0px 4px rgba(188,188,188,0.5);
+box-shadow:0px 1px 1px rgba(255,255,255,0.8) inset, 1px 1px 3px rgba(0,0,0,0.2), 0px 0px 0px 4px rgba(188,188,188,0.5);
+-webkit-border-radius:20px;
+-moz-border-radius:20px;
+border-radius:20px;
+overflow:hidden;
+-webkit-transition:all 0.3s linear;
+-moz-transition:all 0.3s linear;
+-o-transition:all 0.3s linear;
+transition:all 0.3s linear;
+}
+.a-btn-3-text{
+padding-top:5px;
+display:block;
+    width:0px;
+font-size:17px;
+white-space:nowrap;
+text-shadow:0px 1px 1px rgba(255,255,255,0.3);
+color:#78B545;
+-webkit-transition:all 0.2s linear;
+-moz-transition:all 0.2s linear;
+-o-transition:all 0.2s linear;
+transition:all 0.2s linear;
+}
+.a-btn-3-slide-text{
+position:absolute;
+height:100%;
+top:0px;
+right:52px;
+width:0px;
+background:#78B545;
+text-shadow:0px -1px 1px #78B545;
+color:#fff;
+font-size:15px;
+white-space:nowrap;
+text-transform:uppercase;
+text-align:left;
+text-indent:10px;
+overflow:hidden;
+line-height:38px;
+-webkit-box-shadow:-1px 0px 1px rgba(255,255,255,0.4), 1px 1px 2px rgba(0,0,0,0.2) inset;
+-moz-box-shadow:-1px 0px 1px rgba(255,255,255,0.4), 1px 1px 2px rgba(0,0,0,0.2) inset;
+box-shadow:-1px 0px 1px rgba(255,255,255,0.4), 1px 1px 2px rgba(0,0,0,0.2) inset;
+-webkit-transition:width 0.3s linear;
+-moz-transition:width 0.3s linear;
+-o-transition:width 0.3s linear;
+transition:width 0.3s linear;
+}
+.a-btn-3-icon-right{
+position:absolute;
+right:0px;
+top:0px;
+height:100%;
+width:52px;
+border-left:1px solid #5d81ab;
+-webkit-box-shadow:1px 0px 1px rgba(255,255,255,0.4) inset;
+-moz-box-shadow:1px 0px 1px rgba(255,255,255,0.4) inset;
+box-shadow:1px 0px 1px rgba(255,255,255,0.4) inset;
+}
+.a-btn-3-icon-right span{
+width:38px;
+height:38px;
+opacity:0.7;
+position:absolute;
+left:50%;
+top:50%;
+margin:-20px 0px 0px -20px;
+background:transparent url(images/arrow_right.png) no-repeat 50% 55%; 
+-webkit-transition:all 0.3s linear;
+-moz-transition:all 0.3s linear;
+-o-transition:all 0.3s linear;
+transition:all 0.3s linear;
+}
+.a-btn-3:hover{
+padding-right:140px;
+-webkit-box-shadow:0px 1px 1px rgba(255,255,255,0.8) inset, 1px 1px 3px rgba(0,0,0,0.2);
+-moz-box-shadow:0px 1px 1px rgba(255,255,255,0.8) inset, 1px 1px 3px rgba(0,0,0,0.2);
+box-shadow:0px 1px 1px rgba(255,255,255,0.8) inset, 1px 1px 3px rgba(0,0,0,0.2);
+}
+.a-btn-3:hover .a-btn-3-text{
+text-shadow:0px 1px 1px #78B545;
+color:#eee;
+}
+.a-btn-3:hover .a-btn-3-slide-text{
+width:57px;
+}
+.a-btn-3:hover .a-btn-3-icon-right span{
+opacity:1;
+}
+.a-btn-3:active{
+position:relative;
+top:1px;
+background:#5d81ab;
+-webkit-box-shadow:1px 1px 2px rgba(0,0,0,0.4) inset;
+-moz-box-shadow:1px 1px 2px rgba(0,0,0,0.4) inset;
+box-shadow:1px 1px 2px rgba(0,0,0,0.4) inset;
+border-color:#80a9da;
+}
